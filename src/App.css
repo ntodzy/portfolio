@@ -1,0 +1,71 @@
+/* Global Resets and Definitions */
+.App {
+  text-align: center;
+  width: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body, html, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: #00ADF2;
+}
+
+path {
+  height: 200px;
+}
+
+
+/* Navbar */
+#clouds {
+  color: white;
+  height: 150px;
+}
+
+#navbar-container {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#navbar {
+  width: 100%;
+  background: white;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sun-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  margin-left: 10px;
+  /* center text */
+  position: absolute;
+  top: 60%;
+  left: 25%;
+
+}
+
+#sun {
+  position: absolute;
+  top: 0;
+  width: 400px;
+  height: 400px;
+  background-color: #FFD700;
+  border-radius: 50%;
+  left: calc(50% - 200px);
+  transform: translateY(-200px)
+}
+
