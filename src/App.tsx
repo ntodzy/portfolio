@@ -1,26 +1,29 @@
-import React from 'react';
+import {Outlet, Link} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 import logo from './logo.svg';
+import Home from './pages/home';
 import './App.css';
+import Navbar from './components/navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+
+      <Routes>  
+        <Route path="/" element={<Home/>} />
+        <Route path="*" element={<NoMatch/>} />
+      </Routes>
+    </>
   );
 }
 
 export default App;
+
+function NoMatch() {
+  return (
+    <div className="App">
+      <div className="centered" style={{fontSize: "5vh", color:"wheat"}}>404 Not Found</div>
+    </div>
+  )
+}
