@@ -11,11 +11,20 @@
   transform: translate(-50%, -50%);
 }
 
+button {
+  border: 0;
+  background: none;
+}
+
 body, html, #root {
   height: 100%;
+  min-width: 360px;
+  min-height: 640px;
   width: 100%;
   margin: 0;
   background: #00ADF2;
+  background: linear-gradient(27deg, #00ADF2 0%, #2c9dc9 50%, #00ADF2 100%);
+  background: -webkit-linear-gradient(27deg, #00ADF2 0%, #2c9dc9 50%, #00ADF2 100%);
 }
 
 path {
@@ -60,12 +69,28 @@ path {
 
 #sun {
   position: absolute;
+  overflow: hidden;
   top: 0;
   width: 400px;
   height: 400px;
-  background-color: #FFD700;
+  /* background-color: #FFD700; */
   border-radius: 50%;
   left: calc(50% - 200px);
   transform: translateY(-200px)
 }
 
+.sun-gradient {
+  z-index: -1;
+  width: 350%;
+  height: 350%;
+  position: absolute;
+  animation: gra 5s infinite;
+  -webkit-animation: gra 5s infinite;
+  background: linear-gradient(135deg, #FFD700 0%, #f5f105 20%, #f5b905 50%, #f5f105 80%, #FFD700 100%);
+  background: -webkit-linear-gradient(135deg, #FFD700 0%, #f5f105 20%, #f5b905 50%, #f5f105 80%, #FFD700 100%);
+}
+@keyframes gra {
+  0% { left: -250%; top: -250%; }
+  50% { left: -150%; top: -150%; }
+  100% { left: -0; top: 0%; }
+}

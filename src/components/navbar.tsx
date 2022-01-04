@@ -1,12 +1,15 @@
 import react from "react";
 
+
+
 const Navbar = () => {
   return (
     <div id='navbar-container'>
-        <div id="sun">
+        <button id="sun">
             <div id="sun-title">Nathan Todzy</div>
-        </div>
-
+            <div className="sun-gradient"></div>
+        </button>
+        
         <div id="navbar"></div>
 
         <div id="clouds">
