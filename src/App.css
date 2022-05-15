@@ -94,3 +94,26 @@ path {
   50% { left: -150%; top: -150%; }
   100% { left: -0; top: 0%; }
 }
+
+/* .no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */
+
+.no-scrollbar {
+  cursor: grab;
+}
+.no-scrollbar::-webkit-scrollbar {
+  width: 3px;
+  display: none;
+  
+}
+
+.no-scrollbar::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.no-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  width: 10px;
+}

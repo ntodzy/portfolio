@@ -1,7 +1,5 @@
 import react from "react";
 
-
-
 const Navbar = () => {
   return (
     <div id='navbar-container'>

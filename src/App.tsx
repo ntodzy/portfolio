@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import Home from './pages/home';
 import './App.css';
 import Navbar from './components/navbar';
+import Pictures from './pages/pictures';
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
 
       <Routes>  
         <Route path="/" element={<Home/>} />
+        <Route path="/pictures" element={<Pictures/>} />
         <Route path="*" element={<NoMatch/>} />
+        
       </Routes>
     </>
   );
