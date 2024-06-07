@@ -5,20 +5,12 @@
     import Navbar from "../components/Navbar.svelte";
     import ProjectCard from "../components/ProjectCard.svelte";
     import Footer from "../components/Footer.svelte";
-
-    let x = 1;
-
-    
-    function foo(val: number) {
-        x = x * val;
-    }
-
 </script>
 
 <!--  -->
 <Navbar />
 <div class="w-full h-[calc(96vh-64px)] -translate-y-[64px]">
-  <img src="/DSCF2919.JPG" alt="highway in orvietto" class="object-cover w-full h-[96vh]"/>
+  <img src="DSCF2919.JPG" alt="highway in orvietto" class="object-cover w-full h-[96vh]"/>
   <div class="h-[calc(96vh)] absolute inset-0 flex flex-col items-center justify-center">
     <h1 class="text-4xl font-bold text-white">Nathan Todzy</h1>
     <p class="text-lg text-white mt-10">Computer Science and Mathematics Student</p>

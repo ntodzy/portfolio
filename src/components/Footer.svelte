@@ -6,7 +6,7 @@
     <!-- Add Socials -->
     <div class="flex justify-center space-x-4">
         <a href="https://github.com/ntodzy" class="text-white hover:bg-zinc-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-            <img src="/Github.svg" alt="Github" class="w-6 h-6">
+            <img src="Github.svg" alt="Github" class="w-6 h-6">
         </a>
         <a href="https://www.linkedin.com/in/nathan-todzy" class="text-white hover:bg-zinc-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
             <img src="LinkedIn.png" alt="LinkedIn" class="w-6 h-6">
