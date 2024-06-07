@@ -29,18 +29,18 @@
   <svelte:window bind:scrollY={scrollY} />
 
   
-  <nav bind:this={nav} class="sticky top-0 z-10 h-[64px]">
+  <nav bind:this={nav} class="sticky top-0 z-10 h-16">
     <div id="nav" class="{ isOpen ? NAVBAR_COLOR : '' } max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
+      <div class="flex items-center md:justify-center h-16">
         <div class="flex items-center">
-          <div class="flex-shrink-0">
+          <!-- <div class="flex-shrink-0"> -->
             <!-- Your logo goes here -->
             <!-- <span class="text-white font-semibold">{scrollY}</span> -->
-          </div>
+          <!-- </div> -->
         </div>
         <div class="hidden md:block">
-          <div class="ml-10 flex items-baseline space-x-4">
-            <a href="#" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+          <div class="">
+            <a href="#" class="nav-btn { scrollY < 300 ? 'bg-[rgba(0,0,0,0.4)]' : '' } text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Home</a>
             <!-- <a href="#" class="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
             <a href="#" class="text-[#f5d3a1] hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a> -->
           </div>
