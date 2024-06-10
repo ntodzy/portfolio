@@ -2,12 +2,17 @@
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    textColor: {
-      'white': '#ffffff',
-      'black': '#000000',
-      'gray': '#333333',
+    extend: {
+      backgroundColor: {
+        'badgerred': "#C5050C",
+      },
+
+      textColor: {
+        'white': '#ffffff',
+        'black': '#000000',
+        'gray': '#333333',
+      },
     },
-    extend: {},
   },
   plugins: [],
 }

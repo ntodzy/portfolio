@@ -43,11 +43,54 @@
 </script>
 
 <Navbar Y_SWITCH=0/>
+
+<div class="flex flex-col items-center p-10">
+    <div class="w-[80vw] grid grid-rows-3 md:grid-flow-col gap-4">
+        <div class="bg-blue-600 md:row-span-3 col-span-3 rounded-xl p-2">01</div>
+        <div class="bg-badgerred row-span-2 col-span-2 rounded-xl p-2">
+            <div class="flex flex-col md:flex-row p-5">
+                <div>
+
+                    <p class="text-2xl font-bold">{_education[i].name}</p>
+                    <p class="text-lg"> 
+                        {_education[i].degrees.map((degree) => {
+                            return degree;
+                        })}
+                    </p>
+                    <p class="text-lg">
+                        {_education[i].minor.map((degree) => {
+                            return degree;
+                        })}
+                    </p>
+
+                    <p class="text-lg">{_education[i].grad_date} - {_education[i].gpa} GPA</p>
+                </div>
+                <div class="grow">
+                    <p class="text-lg font-bold text-center">Courses</p>
+                    <ul>
+                        {#each _education[i].courses as course}
+                            <li class="text-center">{course}</li>
+                        {/each}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <div class="bg-red-600 col-span-2 rounded-xl p-2">03</div>
+    </div>
+
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" on:click={() => i = (i + 1) % _education.length}>
+        Next Education
+    </button>
+</div>
+
+
+<!-- 
 <div class="flex justify-center bg-gray-400">
     <div>
         <h1 class="text-4xl font-bold text-white text-center">Education</h1>
         <div class="w-[100vw] lg:w-[50vw] p-2 flex flex-row">
-            <div class="md:w-3/4 bg-red-500 rounded-xl">
+            <div class="md:w-3/4 bg-badgerred rounded-xl">
                 <div class="flex flex-col p-5">
                     <p class="text-2xl font-bold">{_education[i].name}</p>
                     <p class="text-lg"> 
@@ -81,7 +124,7 @@
             Next Education
         </button>
     </div>
-</div>
+</div> -->
 
 <style lang="postcss">
     @tailwind base;
@@ -94,6 +137,5 @@
     background-size: cover;
     background-position: center;
   }
-
 
 </style>

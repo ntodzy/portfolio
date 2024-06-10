@@ -22,7 +22,7 @@
 
     $: if (scrollY >= Y_SWITCH) {
       nav?.classList.add(NAVBAR_COLOR);
-      
+
     } else {
       nav?.classList.remove(NAVBAR_COLOR);
     }
