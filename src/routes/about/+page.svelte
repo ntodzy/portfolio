@@ -4,6 +4,5 @@
     import Footer from "../../components/Footer.svelte";
 </script>
 
-<Navbar />
+<Navbar Y_SWITCH=0/>
 <h1>asdkasd</h1>
-<Footer />

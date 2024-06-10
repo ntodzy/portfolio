@@ -6,7 +6,7 @@
 
 </script>
 
-<div class="bg-zinc-800 text-white text-center py-4">
+<div class="bottom-0 w-[100%] bg-zinc-800 text-white text-center py-4">
     <!-- Add Socials -->
     <div class="flex justify-center space-x-4">
         <a href="https://github.com/ntodzy" class="text-white hover:bg-zinc-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">

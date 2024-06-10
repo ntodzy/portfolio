@@ -8,15 +8,15 @@
 
 </script>
 
-<div class="project-card w-[400px] h-[400px] bg-zinc-600 m-2 rounded-lg transition hover:scale-95">
-    <img src={ image_url } alt="Project" class="object-cover w-full h-[200px] rounded-t-lg"/>
+<div class="project-card w-[400px] h-[400px] bg-white m-2 rounded-lg transition hover:scale-95">
+    <img src={ image_url } alt="Project Image" class="object-cover w-full h-[200px] rounded-t-lg"/>
     <div class="project-card-body p-2">
         <div class="project-card-header">
-            <h1 class="text-2xl font-bold text-white ">{title}</h1>
+            <h1 class="text-2xl font-bold text-black ">{title}</h1>
         </div>
 
         <div class="">
-            <p class="text-white mt-">{text}</p>
+            <p class="text-black mt-2">{text}</p>
             {#if !(url === "!")}
                 <p class="" style="color: rgb(56 189 248)"><a href={url} >Learn more</a></p>
             {/if}
